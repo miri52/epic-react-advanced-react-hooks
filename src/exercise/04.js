@@ -27,6 +27,7 @@ function sleep(time = 0) {
   const wakeUpTime = Date.now() + time
   while (Date.now() < wakeUpTime) {}
 }
+// with React 18 we no longer see the discrepancy -> message and scroll happen at the same time even if we use useEffect
 
 function SlooooowSibling() {
   // try this with useLayoutEffect as well to see
